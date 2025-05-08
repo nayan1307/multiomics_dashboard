@@ -1,27 +1,42 @@
-# Multi-Omics Integration Dashboard
+# Multi-Omics Integration Dashboard (In Progress)
 
-An interactive bioinformatics dashboard to analyze and visualize multi-omics data (Transcriptomics + Proteomics).
+This project is an interactive bioinformatics dashboard designed to analyze and visualize multi-omics data, specifically integrating transcriptomics (RNA-seq) and proteomics (mass spectrometry) datasets.
 
-## Features
-- Upload Gene and Protein expression datasets
-- Perform PCA analysis to visualize sample distributions
-- Integrate multi-omics layers with Gene-Protein correlation heatmaps
-- Discover key biomarkers using XGBoost feature importance
-- Simple and interactive dashboard built using Streamlit
+⚡ **Note:** This project is currently a work in progress. More features, datasets, and polish will be added soon.
+
+## Features Implemented
+- 📥 Upload Gene Expression, Protein Expression, and Metadata CSV files
+- 📊 Perform Principal Component Analysis (PCA) for transcriptomics and proteomics separately
+- 🔬 Integrate multi-omics layers via Gene-Protein Correlation Heatmaps
+- 🎯 Identify important biomarkers using XGBoost feature importance ranking
+- 🌐 Simple and interactive dashboard built using Streamlit
+
+## Planned Features
+- 🌟 Integration with real public datasets (TCGA + CPTAC)
+- 📈 Advanced visualizations (Volcano plots, Correlation Networks)
+- 📋 Downloadable biomarker reports
+- 🚀 Deployment on Streamlit Cloud for public access
 
 ## How to Run Locally
-1. Clone this repository
-2. Create a virtual environment and install dependencies:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/multiomics_dashboard.git
+   cd multiomics_dashboard
+   ```
 
-```
-pip install -r requirements.txt
-```
+2. Create a virtual environment and install dependencies:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # (Linux/Mac)
+   .venv\Scripts\activate       # (Windows)
+
+   pip install -r requirements.txt
+   ```
 
 3. Run the Streamlit app:
-
-```
-streamlit run dashboard/app.py
-```
+   ```bash
+   streamlit run dashboard/app.py
+   ```
 
 ## Technologies Used
 - Python
